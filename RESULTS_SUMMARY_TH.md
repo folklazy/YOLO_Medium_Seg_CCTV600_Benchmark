@@ -6,15 +6,15 @@ Run `cctv600-20261116T073208561699Z`
 
 | Model | Complete | Box AP % | AP50 % | AP75 % | P % | R % | F1 % |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| yolo26m-seg.pt | 0/600 | — | — | — | — | — | — |
-| yolo11m-seg.pt | 0/600 | — | — | — | — | — | — |
-| yolov8m-seg.pt | 0/600 | — | — | — | — | — | — |
+| yolo26m-seg.pt | 600/600 | 61.437 | 81.107 | 69.662 | 85.224 | 74.252 | 79.361 |
+| yolo11m-seg.pt | 600/600 | 60.436 | 80.994 | 67.273 | 87.832 | 73.212 | 79.858 |
+| yolov8m-seg.pt | 600/600 | 61.489 | 82.569 | 69.790 | 84.919 | 75.423 | 79.890 |
 
 | Model | Clean rounds | Forward ms/image | Adapter ms/image | FPS | Allocated MiB |
 | --- | --- | --- | --- | --- | --- |
-| yolo26m-seg.pt | 0/3 | — | — | — | — |
-| yolo11m-seg.pt | 0/3 | — | — | — | — |
-| yolov8m-seg.pt | 0/3 | — | — | — | — |
+| yolo26m-seg.pt | 3/3 | 29.719 | 56.126 | 17.817 | 605.934 |
+| yolo11m-seg.pt | 3/3 | 30.418 | 61.257 | 16.325 | 696.762 |
+| yolov8m-seg.pt | 3/3 | 30.927 | 69.127 | 14.466 | 766.317 |
 
 Adapter time รวม preprocessing/H2D, forward, NMS/native masks และ compact transfer ส่วน input I/O, RLE และ output writing เก็บแยก
 
